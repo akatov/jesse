@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @node.kind %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @node.contents %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @node.parent %>
+</p>
+
+<%= link_to 'Edit', edit_node_path(@node) %> |
+<%= link_to 'Back', nodes_path %>
