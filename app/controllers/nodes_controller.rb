@@ -5,11 +5,19 @@ class NodesController < ApplicationController
   # GET /nodes.json
   def index
     @nodes = Node.all
+    respond_to do |format|
+      format.json { render json: @nodes }
+      format.html { render :index }
+    end
   end
 
   # GET /nodes/1
   # GET /nodes/1.json
   def show
+    respond_to do |format|
+      format.json { render json: @node }
+      format.html { render :show }
+    end
   end
 
   # GET /nodes/new
