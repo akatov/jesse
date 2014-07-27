@@ -43,4 +43,6 @@ gem 'active_model_serializers'
 
 gem 'rack-cors'
 
+gem 'figaro'
+
 ruby "2.1.1"

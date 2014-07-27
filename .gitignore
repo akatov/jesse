@@ -16,3 +16,5 @@
 /tmp
 
 /.ruby-version
+
+/config/application.yml
